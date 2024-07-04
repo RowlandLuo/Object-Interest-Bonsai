@@ -1,3 +1,4 @@
+rm(list = ls())
 library(tidyverse)
 ObjectInterest1 <- read_csv("240704_r1451_0_baseline_object-interest.csv")
 head(ObjectInterest1)
@@ -74,8 +75,8 @@ center_x1 <- 309
 center_y1 <- 705
 df$distance <- sqrt((df$x - center_x1)^2 + (df$y - center_y1)^2)
 points_in_circle1 <- sum(df$distance <= radius)
-print(points_in_circle)
-#A total of 1296 is within object 1 ROI.
+print(points_in_circle1)
+#A total of 838 is within object 1 ROI.
 center_x2 <- 793
 center_y2 <- 256
 df$distance1 <- sqrt((df$x - center_x2)^2 + (df$y - center_y2)^2)
