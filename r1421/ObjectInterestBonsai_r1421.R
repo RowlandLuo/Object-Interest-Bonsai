@@ -24,7 +24,7 @@ p1 <- ggplot(df, aes(x = x, y = y)) +
 #Add ROI one onto the scatterplot
 library(ggforce)
 p1circle130 <- p1 + geom_circle(aes(x0 = 309, y0 = 705, r = 130), color = "blue")
-p1_130 <- p1circle130 + geom_circle(aes(x0 = 793, y0 = 256, r = 130), color = "red")
+p1_130 <- p1circle130 + geom_circle(aes(x0 = 793, y0 = 216, r = 130), color = "red")
 p1_130
 #Let's try the above code on the second video file.
 ObjectInterest2 <- read_csv("240704_r1421_1_baseline_object-interest.csv")
@@ -66,7 +66,7 @@ p3 <- ggplot(df2, aes(x = x2, y = y2)) +
   geom_point(alpha = 0.3)
 p3
 p3circle130 <- p3 + geom_circle(aes(x0 = 309, y0 = 705, r = 130), color = "blue")
-p3_130 <- p3circle130 + geom_circle(aes(x0 = 793, y0 = 256, r = 130), color = "red")
+p3_130 <- p3circle130 + geom_circle(aes(x0 = 793, y0 = 216, r = 130), color = "red")
 p3_130
 #After looking at three videos, we decided to use the radius 130
 radius <- 130
@@ -78,11 +78,11 @@ points_in_circle1 <- sum(df$distance <= radius)
 print(points_in_circle1)
 #A total of 613 is within object 1 ROI.
 center_x2 <- 793
-center_y2 <- 256
+center_y2 <- 216
 df$distance1 <- sqrt((df$x - center_x2)^2 + (df$y - center_y2)^2)
 points_in_circle2 <- sum(df$distance1 <= radius)
 print(points_in_circle2)
-#A total of 606 points are within object 2 ROI.
+#A total of 685 points are within object 2 ROI.
 #Now let's look at the next video
 df1$distance <- sqrt((df1$x - center_x1)^2 + (df1$y - center_y1)^2)
 points_in_circle2 <- sum(df1$distance <= radius)
@@ -100,4 +100,4 @@ points_in_circle4
 df2$distance <- sqrt((df2$x - center_x2)^2 + (df2$y - center_y2)^2)
 points_in_circle5 <- sum(df2$distance <= radius)
 points_in_circle5
-#A total of 591 points are within object 2 ROI.
+#A total of 612 points are within object 2 ROI.
