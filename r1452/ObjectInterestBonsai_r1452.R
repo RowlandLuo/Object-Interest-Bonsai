@@ -76,3 +76,36 @@ p3
 p3circle130 <- p3 + geom_circle(aes(x0 = 309, y0 = 705, r = 130), color = "blue")
 p3_130 <- p3circle130 + geom_circle(aes(x0 = 793, y0 = 256, r = 130), color = "red")
 p3_130
+#After looking at three videos, we decided to use the radius 130
+radius <- 130
+#Now let's focus on video 1.
+center_x1 <- 309
+center_y1 <- 705
+df$distance <- sqrt((df$x - center_x1)^2 + (df$y - center_y1)^2)
+points_in_circle1 <- sum(df$distance <= radius)
+print(points_in_circle)
+#A total of 1296 is within object 1 ROI.
+center_x2 <- 793
+center_y2 <- 256
+df$distance1 <- sqrt((df$x - center_x2)^2 + (df$y - center_y2)^2)
+points_in_circle2 <- sum(df$distance1 <= radius)
+print(points_in_circle2)
+#A total of 904 points are within object 2 ROI.
+#Now let's look at the next video
+df1$distance <- sqrt((df1$x - center_x1)^2 + (df1$y - center_y1)^2)
+points_in_circle2 <- sum(df1$distance <= radius)
+points_in_circle2
+#A total of 970 points are within object 1 ROI.
+df1$distance <- sqrt((df1$x - center_x2)^2 + (df1$y - center_y2)^2)
+points_in_circle3 <- sum(df1$distance <= radius)
+points_in_circle3
+#A total of 588 points are within object 2 ROI.
+#Finally, let's look at the third video.
+df2$distance <- sqrt((df2$x - center_x1)^2 + (df2$y - center_y1)^2)
+points_in_circle4 <- sum(df2$distance <= radius)
+points_in_circle4
+#A total of 824 points are within object 1 ROI.
+df2$distance <- sqrt((df2$x - center_x2)^2 + (df2$y - center_y2)^2)
+points_in_circle5 <- sum(df2$distance <= radius)
+points_in_circle5
+#A total of 417 points are within object 2 ROI.
