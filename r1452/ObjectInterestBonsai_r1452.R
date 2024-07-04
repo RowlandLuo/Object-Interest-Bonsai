@@ -1,3 +1,4 @@
+rm(list = ls())
 library(tidyverse)
 ObjectInterest1 <- read_csv("240704_r1452_0_baseline_object-interest.csv")
 head(ObjectInterest1)
@@ -48,7 +49,7 @@ ObjectInterest2 <- ObjectInterest2 %>%
 x1 <- c(ObjectInterest2$pixelx)
 y1 <- c(ObjectInterest2$pixely)
 df1 <- data.frame(x = x1, y = y1)
-p2 <- ggplot(df, aes(x = x1, y = y1)) +
+p2 <- ggplot(df1, aes(x = x1, y = y1)) +
   geom_point(alpha = 0.3)
 p2
 p2circle130 <- p2 + geom_circle(aes(x0 = 309, y0 = 705, r = 130), color = "blue")
@@ -83,7 +84,7 @@ center_x1 <- 309
 center_y1 <- 705
 df$distance <- sqrt((df$x - center_x1)^2 + (df$y - center_y1)^2)
 points_in_circle1 <- sum(df$distance <= radius)
-print(points_in_circle)
+print(points_in_circle1)
 #A total of 1296 is within object 1 ROI.
 center_x2 <- 793
 center_y2 <- 256
