@@ -1,0 +1,33 @@
+Date,Trial Number,Rat Number,Object 1 ,Object 2,Frames1,Frames2,Notes,,,,,,,,,,,FrameNumber,Frames
+7/4/2024,0,r1423,green jar,gnome,613,685,Rat seems to be equally interested in both objects,,,,,,,,,,,1,613
+7/4/2024,1,r1423,blue jar,clear jar,,,Tracking failed. Replaced the blue jar with upside-down flower,,,,,,,,,,,1,
+7/4/2024,2,r1423,purple jar,wide jar,541,612,Rat seems to be equally interested in both objects,,,,,,,,,,,1,541
+7/4/2024,0,r1421,flower,clear jar,910,753,Rat seems to be slightly more interested in the clear jar.,,,,,,,,,,,1,910
+7/4/2024,1,r1421,purple jar,wide jar,1307,484,Rat seems to be slightly more interested in the purple jar,,,,,,,,,,,1,1307
+7/4/2024,2,r1421,green jar,gnome,696,314,Rat seems to be significantly more interested in the gnome.,,,,,,,,,,,1,696
+7/4/2024,0,r1451,purple jar,wide jar,838,919,Rat seems to be more interested in the wide jar,,,,,,,,,,,1,838
+7/4/2024,1,r1451,green jar,gnome,184,963,Some grooming occurred around the gnome and the rat seems to be significantly more interested in the gnome,,,,,,,,,,,1,184
+7/4/2024,2,r1451,flower,clear jar,803,441,The rat seems to be equally interested in both objects. Tracking was a little bit interrupted when the rat rears at the right corner (since the head is lost there),,,,,,,,,,,1,803
+7/4/2024,0,r1452,green jar,gnome,1296,1249,The rat seems to be equally interested in both objects. Tracking was a little bit interrupted when the rat rears at the right corner (since the head is lost there),,,,,,,,,,,1,1296
+7/4/2024,1,r1452,purple jar,wide jar,970,551,"The rat shows equal amount of interest in both objects, although the rat did not seem to be very interested in either objects",,,,,,,,,,,1,970
+7/4/2024,2,r1452,flower,clear jar,824,436,The rat does not seem to be interested in either objects.,,,,,,,,,,,1,824
+7/9/2024,3,r1421,seltzer can,dry shampoo,340,930,We accidentally exposed the rat to the objects but then had to take her out because the convert color is not working. The rat seems to be interested in the dry shampoo,,,,,,,,,,,1,340
+7/9/2024,3,r1423,seltzer can,dry shampoo,289,1338,The rat seems to be more interested in the dry shampoo.,,,,,,,,,,,1,289
+7/9/2024,4,r1451,dry shampoo,seltzer can,385,325,The rat seems to be more interested in the can.,,,,,,,,,,,1,385
+7/9/2024,4,r1452,dry shampoo,seltzer can ,,548,"Do not include time after the rat tipped the dry shampoo. The dry shampoo is too light and it is hard to stick onto the floor. Don't include the dry shampoo for this trial, only the seltzer can.",,,,,,,,,,,1,
+,,,,,,,,,,,,,,,,,,2,685
+,,,Objects,Mean Frames,,,,,,,,,,,,,,2,
+,,,gnome,802.75,,,,,,,,,,,,,,2,612
+,,,green jar,697.25,,,,,,,,,,,,,,2,753
+,,,purple jar,914,,,,,,,,,,,,,,2,484
+,,,wide jar,641.5,,,,,,,,,,,,,,2,314
+,,,flower,845.67,,,,,,,,,,,,,,2,919
+,,,clear jar,543.33,,,,,,,,,,,,,,2,963
+,,,seltzer can,375.5,,,,,,,,,,,,,,2,441
+,,,dry shampoo,884.33,,,,,,,,,,,,,,2,1249
+,,,,,,,,,,,,,,,,,,2,551
+,,,,,,,,,,,,,,,,,,2,436
+,,,,,,,,,,,,,,,,,,2,930
+,,,,,,,,,,,,,,,,,,2,1338
+,,,,,,,,,,,,,,,,,,2,325
+,,,,,,,,,,,,,,,,,,2,548
